@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*para toda a pagina*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+ }
+html{
+	scroll-behavior: smooth;
+}
+
+/*menu*/
+.nav-bar {
+	width: 100%;
+	position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    color: #fff;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-list ul li {
+    padding: 10px;
+}
+.nav-list ul li a:hover {
+	text-decoration: underline;
+	color: #ccc;
+}
+.nav-item {
+    height: calc(100% - 88px);
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+/*adicionando menu*/
+.sticky{
+	background: #00804b;
+	transition: all 0.3s ease;
+	z-index: 999;
+}
+/*escondendo menu e botao mobile*/
+.mobile-menu-icon {   display: none;}
+.mobile-menu {    display: none;}
+/*fim da navbar*/
+
+/*home   começo do home*/
+.home{
+	display: flex;
+	background: url(image/fundo.webp) no-repeat center;
+	height: 100vh;
+	color: #fff;
+	min-height: 500px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+	margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+	font-size: 27px;
+}
+.home .home-content .text-2{
+	font-size: 75px;
+	font-weight: 500;
+	margin-left: -3px;
+}
+.home .home-content .text-3{
+	font-size: 40px;
+	margin: 5px 0;
+}
+.home .home-content .text-3 span{
+	color: #00804b;
+	font-weight: 500;
+}
+.home .home-content a{
+	display: inline-block;
+	background: #00804b;
+	color: #fff;
+	font-size: 25px;
+	padding: 12px 36px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid #00804b;
+}
+.home .home-content a:hover{
+	color: #00804b;
+	background: none;
+}
+
+/*botao rolagem para cima*/
+.scrool-up-btn{
+	position: fixed;
+	width: 40px;
+	height: 45px;
+	right: 30px;
+	bottom: 10px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background: #00804b;
+	border-radius: 6px;
+	font-size: 30px;
+	z-index: 9999;
+	cursor: pointer;
+	opacity: 1;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.scrool-up-btn .show{
+	opacity: 1;
+	pointer-events: auto;
+	bottom: 130px;
+}
+
+.max-width {
+	padding: 0 70px 0 70px;
+}
+
+/*sessao e titulo*/
+section{
+	padding: 100px 0;
+}
+.section, .title{
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.equipe .max-width h2,
+.depoi .max-width h2 {
+	color: #fff;
+}
+.section, .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 180px;
+	height: 3px;
+	background: #00804b;
+	transform: translateX(-50%);
+}
+
+/*  ( sobre  ) alterando tamanho do titulo before e after*/
+.sobre h2::after {background: #fff;}
+
+/*  ( Trabalhos  ) alterando tamanho do titulo before e after*/
+.equipe .title::before { width: 220px;}
+.equipe h2::before {background: #00804b;}
+.equipe .title::after { color: #00804b; }
+
+/*  ( especialidades habilidades  ) alterando tamanho do titulo before e after*/
+.habil h2::after {background: #fff;}
+.habil .title::before{	width: 270px;}
+
+/*  ( depoimentos depoi  ) alterando tamanho do titulo before e after*/
+.section, .depoi .title::before { width: 280px;}
+.depoi h2::before {background: #00804b;}
+.depoi .title::after { color: #00804b; }
+
+/*  ( trabalhos  ) alterando tamanho do titulo before e after*/
+.contato h2::after {background: #fff;}
+
+.section, .title::after{
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	font-size: 20px;
+	color: #00804b;
+	background: #1E2122;
+	padding: 5px;
+	transform: translateX(-50%);
+}
+.sobre, .servicos, .habil, .equipe, .contato, footer{
+	font-family: 'Roboto', sans-serif;
+}
+.sobre .sobre-content,
+.servicos .serv-content,
+.habil .habil-content,
+.contato .contato-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*sobre*/
+.sobre, .title::after{
+	content: "Quem sou eu";
+}
+.sobre .sobre-content .left{
+	width: 45%;
+}
+.sobre .sobre-content .right{
+	width: 55%;
+}
+.sobre .sobre-content .right .text{
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	padding-right: 30px;
+}
+.sobre .sobre-content .right .text span{
+	color: #00804b;
+}
+.sobre .sobre-content .right p{
+	text-align: justify;
+}
+.sobre .sobre-content .right a{
+	display: inline-block;
+	background: #00804b;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid #1E2122;
+	transition: all 0.3s ease;
+}
+.sobre .sobre-content .right a:hover{
+	color: #00804b;
+	background: none;
+}
+.sobre .sobre-content .left img{
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+/*sessao equipe  trabalhos*/
+.equipe .title::after{
+	content: "O que já produzi";
+}
+.equipe .title::before {
+	color: #00804b;
+}
+.equipe {
+	background: #1E2122;
+}
+.equipe .carousel .card{
+	background: #444;
+	border-radius: 6px;
+	padding: 25px 35px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+.equipe .carousel .card:hover{
+	background: #00804b;
+}
+.equipe .carousel .card img{
+	width: 100% auto;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 10px;
+	border: 5px solid #00804b;
+	cursor: pointer;
+}
+.equipe .carousel .card:hover img{
+	border-color: #fff;
+}
+.equipe .carousel .card .text:hover,
+.equipe .carousel .card p:hover {
+	color: #fff;
+	cursor: pointer;
+}
+.equipe .carousel .card .box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+}
+.equipe .carousel .card:hover .box{
+	transform: scale(1.05);
+}
+.equipe .carousel .card .text{
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}
+.owl-dots{
+	text-align: center;
+	margin-top: 20px;
+}
+.owl-dot{
+	width: 14px;
+	height: 14px;
+	outline: none!important;
+	border-radius: 50%;
+	border: 2px solid #00804b!important;
+	transition: all 0.3s ease;
+}
+.owl-dot.active{
+	width: 35px;
+	border-radius: 15px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+	background: #00804b!important;
+}
+
+/*sessão especialidades habilidades*/
+.habil .title::after{
+	content: "Principais habilidades";
+}
+.habil .habil-content .column{
+	width: calc(50% - 30px);
+}
+.habil .habil-content .left .text{
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.habil .habil-content .left p{
+	text-align: justify;
+}
+.habil .habil-content .left a{
+	display: inline-block;
+	background: #00804b;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 16px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid #1E2122;
+	transition: all 0.3s ease;
+}
+.habil .habil-content .left a:hover{
+	color: #00804b;
+	background: none;
+}
+.habil .habil-content .right .bars{
+	margin-bottom: 15px;
+}
+.habil .habil-content .right .info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.habil .habil-content .right span{
+	font-weight: 500;
+	font-size: 18px;
+}
+.habil .habil-content .right .line{
+	width: 100%;
+	height: 5px;
+	background: #ccc;
+	position: relative;
+}
+.habil .habil-content .right .line::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #00804b;
+}
+.habil .habil-content .right .html::before{
+	width: 89%;
+}
+.habil .habil-content .right .css::before{
+	width: 80%;
+}
+.habil .habil-content .right .javascript::before{
+	width: 75%;
+}
+.habil .habil-content .right .mysql::before{
+	width: 57%;
+}
+.habil .habil-content .right .php::before{
+	width: 55%;
+}
+
+/*serviços equipe depoimento*/
+.depoi .title::after{
+    content: "O que falam sobre mim";
+}
+.depoi {
+	background: #1E2122;
+}
+.depoi .carousel .card{
+    background: #444;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.depoi .carousel .card:hover{
+    background: #00804b;
+}
+.depoi .carousel .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00804b;
+    transition: all 0.3s ease;
+	cursor: pointer;
+}
+.depoi .carousel .card:hover img{
+    border-color: #fff;
+}
+.depoi .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.depoi .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.depoi .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+	color: #fff;
+	cursor: pointer;
+}
+.depoi .carousel .card p {
+	color: #fff;
+}
+
+/*sessão contato*/
+.contato .title::after{
+	content: "Fale Comigo";
+}
+.contato .contato-content .column{
+	width: calc(50% - 30px);
+}
+.contato .contato-content{
+	align-items: flex-start;
+}
+.contato .contato-content .left p{
+	text-align: justify;
+}
+.contato .contato-content .text{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.contato .contato-content .left .icon{
+	margin: 10px 0;
+}
+.contato .contato-content .row{
+	display: flex;
+	height: 65px;
+	align-items: center;
+}
+.contato .contato-content .row .info{
+	margin-left: 30px;
+}
+.contato .contato-content .row .info .head{
+	font-weight: 500;
+}
+.contato .contato-content .row .info .sub-title{
+	color: #333;
+}
+.contato .contato-content .row ion-icon{
+	font-size: 25px;
+	color: #00804b;
+}
+.contato .right form .fields{
+	display: flex;
+}
+.contato .right form .fields,
+.contato .right form .fields .fild{
+	width: 100%;
+	height: 45px;
+	margin-bottom: 15px;
+}
+.contato .right form .fields input,
+.contato .right form .textarea textarea{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #00804b;
+	border-radius: 6px;
+	outline: none;
+	padding: 0 15px;
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+}
+.contato .right form .name{
+	margin-right: 10px;
+}
+.contato .right form .email{
+	margin-left: 10px;
+}
+.contato .right form .textarea{
+	width: 100%;
+	height: 80px;
+}
+.contato .right form .textarea textarea{
+	padding-top: 10px;
+	resize: none;
+}
+.contato .right form .button{
+	width: 100px;
+	height: 47px;         margin-top: 5px; 
+}
+.contato .right form .button button{
+	width: 100%;  
+	height: 100%;
+	border: 2px solid #00804b;
+	background: #00804b;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.contato .right form .button button:hover{
+	color: #00804b;
+	background: none;
+}
+
+/*sessão rodape*/
+.footer{
+	background: #1E2122;
+	padding: 20px 35px;
+	color: #fff;
+	text-align: center;
+}
+.footer span a{
+	color: #00804b;
+	text-decoration: none;
+}
+.footer span a:hover{
+	text-decoration: underline;
+}
+
+/*responsivo   habilidades em todas as telas*/
+@media (max-width: 1104px){
+	.sobre .sobre-content .left img{
+		width: 350px;
+		height: 350px;
+	}
+}
+@media (max-width: 947px){
+	.nav-bar { padding: 1.5rem 4rem;  }
+    .nav-item {  display: none;  }    
+    .mobile-menu-icon {  display: block;  }
+    .nav-list { display: none;  }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }    
+    .mobile-menu ul {z-index: 999;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5rem;
+        margin-top: 88px;
+        position: fixed;
+        background-color: #1E2122;
+        width: 100%;
+        line-height: 1.7rem;
+    }
+	.mobile-menu ul li a:hover {
+		text-decoration: underline;
+		font-size: 1.3rem;
+		color: #ccc;
+	}
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 3.5rem;
+		border-color: #fff;
+    }
+    .max-width{
+    	max-width: 900px;
+		padding: 0 50px;
+	}
+	.home .home-content .text-2{font-size: 70px;}
+	.home .home-content .text-3{font-size: 35px;}
+	.home .home-content a{
+		font-size: 23px;
+		padding: 10px 30px;
+	}
+	.sobre .sobre-content .column{width: 50%;}
+	.sobre .sobre-content .left{
+		display: flex;
+		justify-content: center;
+		margin: 0 auto 60px;
+	}
+	.sobre .sobre-content .right{
+		flex: 100%;
+	}
+	.servicos .serv-content .card{
+		width: calc(50% - 10px);
+		margin-bottom: 20px;
+	}
+	.habil .habil-content .column,
+	.contato .contato-content .column{
+		width: 100%;
+		margin-bottom: 35px;
+	}
+}	
+@media (max-width: 690px){
+	.home .home-content .text-2{
+		font-size: 60px;
+	}
+	.home .home-content .text-3{
+		font-size: 32px;
+	}	
+	.home .home-content a{
+		font-size: 20px;
+	}
+	.servicos .serv-content .card{
+		width: 100%;
+	}
+}
+@media (max-width: 500px){
+	.home .home-content .text-2{
+		font-size: 50px;
+	}
+	.home .home-content .text-3{
+		font-size: 27px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
