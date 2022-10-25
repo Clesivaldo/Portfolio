@@ -187,7 +187,7 @@ section{
 .habil .title::before{	width: 270px;}
 
 /*  ( depoimentos depoi  ) alterando tamanho do titulo before e after*/
-.section, .depoi .title::before { width: 380px;}
+.section, .depoi .title::before { width: 250px;}
 .depoi h2::before {background: #00804b;}
 .depoi .title::after { color: #00804b; }
 
@@ -409,7 +409,7 @@ section{
 
 /*serviços equipe depoimento*/
 .depoi .title::after{
-    content: "O que falam sobre mim";
+    content: "Minhas avaliações";
 }
 .depoi {
 	background: #1E2122;
@@ -659,9 +659,6 @@ section{
 	.servicos .serv-content .card{
 		width: 100%;
 	}
-	.depoi .title::after{
-		width: 55%;
-	}
 }
 @media (max-width: 500px){
 	.logo {
@@ -680,9 +677,9 @@ section{
 		margin: 0 -20px 0 -20px;
 	}
 	.depoi .title::after{
-		width: 52%;
+		width: 40%;
 	}	
-	.equipe, .title::before { width: 20px;}
+	
 }
 
 
