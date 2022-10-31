@@ -675,11 +675,11 @@ section{
 		font-size: 27px;
 	}
 	.section, .habil .title::after {
-		bottom: -25px;
+		bottom: -26px;
 		padding: 0;
 	}
 	.equipe .title::after{
-		bottom: -25px;
+		bottom: -26px;
 		padding: 0;
 	}
 	.habil .title::after{
@@ -693,9 +693,12 @@ section{
 		width: 25%;
 	}	
 	.depoi .title::after{
-    content: "Avaliações";
-	padding: 30;
-    }
+		content: "Minhas avaliações";
+	}
+	.depoi .title::after{
+		bottom: -26px;
+		padding: 0;
+	}
 	.depoi .title::before{
 		width: 150px;
 	}
