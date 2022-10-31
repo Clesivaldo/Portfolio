@@ -678,6 +678,10 @@ section{
 		bottom: -25px;
 		padding: 0;
 	}
+	.equipe .title::after{
+		bottom: -25px;
+		padding: 0;
+	}
 	.habil .title::after{
 		width: 35%;
 	}
@@ -690,9 +694,10 @@ section{
 	}	
 	.depoi .title::after{
     content: "Avaliações";
+	padding: 30;
     }
 	.depoi .title::before{
-		width: 180px;
+		width: 150px;
 	}
 	
 }
