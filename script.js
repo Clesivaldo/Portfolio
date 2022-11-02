@@ -10,9 +10,23 @@ $(document).ready(function(){
             $('.scrool-up-btn').removeClass("show");
         }
     });
-    $('.scrool-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-    });
+
+    const btn = document.getElementById("btnTopo")
+    btn.addEventListener("click", function(){
+        window.scrollTo(0,0)
+    })
+
+    document.addEventListener('scroll',ocultar)
+
+    function ocultar(){
+        if(window.scrollY > 10){
+            btn.style.display = "flex"
+        } else {
+            btn.style.display = "none"
+        }
+    }
+
+    ocultar()
 
     var typed = new Typed(".typing", {
         strings:["Desenvolvedor","Designer","Freelancer","Programador"],
