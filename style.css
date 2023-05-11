@@ -335,6 +335,14 @@ section{
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
+.equipe .carousel .card .text a { 
+	font-size: 25px;
+	font-weight: 550;
+	color: #000000;
+ }
+ .equipe .carousel .card .text a:hover {
+	color: #ffffff;
+ }
 .equipe .carousel .card p{
 	color: #1E2122;
 	font-size: 1rem;
