@@ -329,10 +329,15 @@ section{
 .equipe .carousel .card:hover .box{
 	transform: scale(1.05);
 }
+
 .equipe .carousel .card .text{
 	font-size: 25px;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
+}
+.equipe .carousel .card p{
+	color: #1E2122;
+	font-size: 1rem;
 }
 .owl-dots{
 	text-align: center;
@@ -636,6 +641,9 @@ section{
 		font-size: 23px;
 		padding: 10px 30px;
 	}
+	.title { 
+		margin-top: 60px;
+	 }
 	.sobre .sobre-content .column{width: 50%;}
 	.sobre .sobre-content .left{
 		display: flex;
@@ -677,6 +685,9 @@ section{
 	.home .home-content a{
 		font-size: 20px;			
 	}	
+	.title { 
+		margin-top: 60px;
+	 }
 	.servicos .serv-content .card{
 		width: 100%;
 	}
@@ -706,6 +717,9 @@ section{
 	.home .home-content .text-3{
 		font-size: 27px;
 	}
+	.title { 
+		margin-top: 60px;
+	 }
 	.section, .habil .title::after {
 		bottom: -26px;		padding: 0;
 	}
