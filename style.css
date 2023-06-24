@@ -137,7 +137,7 @@ html{
 #btnTopo {
 	position: fixed;
 	bottom: 15px;
-	right: 20px;
+	right: 25px;
 	width: 40px;
 	height: 40px;
 	background-color: #00804b;
@@ -168,7 +168,7 @@ html{
 
 /*sessao e titulo*/
 section{
-	padding: 100px 0;
+	padding: 70px 0;
 }
 .section, .title{
 	font-family: 'Ubuntu', sans-serif;
@@ -205,6 +205,7 @@ section{
 
 /*  ( especialidades habilidades  ) alterando tamanho do titulo before e after*/
 .habil h2::after {background: #fff;}
+.habil h2 {color: #000000;}
 .habil .title::before{	width: 270px;}
 
 /*  ( depoimentos depoi  ) alterando tamanho do titulo before e after*/
@@ -604,14 +605,20 @@ section{
 /*responsivo   habilidades em todas as telas*/
 @media (max-width: 1104px){
 	.sobre .sobre-content .left img{
-		width: 350px;
-		height: 350px;
+		width: auto;
+		height: 320px;
 	}
 }
 @media (max-width: 947px){
-	.nav-bar { padding: 1.5rem 4rem;  }
+	.logo a{
+		margin: -30px 0 -30px -20px;
+	}
     .nav-item {  display: none;  }    
-    .mobile-menu-icon {  display: block;  }
+    .mobile-menu-icon {  display: block; float: right; margin: -4px -20px; }
+	
+	.nav-bar {
+		height: 75px;
+	}
     .nav-list { display: none;  }
     .mobile-menu-icon button {
         background-color: transparent;
@@ -671,15 +678,9 @@ section{
 		margin-bottom: 35px;
 	}
 }	
-@media (max-width: 690px){
-	.logo {
-		margin: 0 0 0 -25px;
-	}
-	.mobile-menu-icon button {
-		margin-right: -25px;
-	}
+@media (max-width: 690px){			
 	.home .max-width {
-		margin: 190px -10px 0 -10px;
+		margin: 190px 0px 0 0px;
 	}
 	.home .home-content .text-1 {
 		margin:  -20px 0 5px 0;
@@ -712,13 +713,7 @@ section{
 		width: 220px;
 	}
 }
-@media (max-width: 500px){
-	.logo {
-		margin: 0 0 0 -25px;
-	}
-	.mobile-menu-icon button {
-		margin-right: -25px;
-	}
+@media (max-width: 500px){			
 	.home .home-content .text-2{
 		font-size: 40px;
 	}
@@ -726,11 +721,12 @@ section{
 		font-size: 27px;
 	}
 	.title { 
-		margin-top: 60px;
+		margin-top: 10px;
 	 }
 	.section, .habil .title::after {
 		bottom: -26px;		padding: 0;
 	}
+	
 	.equipe .title::after{
 		bottom: -26px;		padding: 0;
 	}
