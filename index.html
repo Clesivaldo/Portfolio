@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfólio  -  SantosTI Designer</title>
-	<link rel="icon" href="image/banner4.ico">
+	<link rel="icon" href="image/icon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="style.css">
@@ -271,22 +271,28 @@
 				</div><!--column left-->
 				<div class="column right">
 					<div class="text">Mensagem</div>
-					<form action="#">
+					<form 
+					    action="https://formsubmit.co/diegosantos2288@hotmail.com" method="POST" >
+						
+					
 						<div class="fields">
 							<div class="field name">
-								<input type="text" placeholder="Nome" required>
+								<input type="text" name="name" placeholder="Nome" required>
 							</div>
-							<div class="field email">
-								<input type="email" placeholder="Email" required>
+							<div class="fields field assununto">
+								<input type="text" name="assununto" placeholder="Assunto" required>
 							</div>
+							
 						</div>
 						<div class="field">
-							<div class="fields field name">
-								<input type="text" placeholder="Assunto" required>
+							<div class="fields email">
+								<input type="email" name="email" placeholder="Email" required>
 							</div>
 							<div class="field textarea">
-								<textarea cols="30" rows="10" placeholder="Escrever sua mensagem aqui"></textarea>
+								<textarea cols="30" rows="10" name="textarea" placeholder="Escrever sua mensagem aqui"></textarea>
+								<input type="file" name="attachment" accept="image/png, image/jpeg">
 							</div>
+							<input type="hidden" name="_captcha" value="false">
 							<div class="button">
 								<button type="submit">Enviar</button>
 							</div>

@@ -540,11 +540,15 @@ section{
 	height: 45px;
 	margin-bottom: 15px;
 }
+
+
+
+
 .contato .right form .fields input,
 .contato .right form .textarea textarea{
 	width: 100%;
 	height: 100%;
-	margin-right: 8px;
+	margin-right: 0;
 	border: 1px solid #00804b;
 	border-radius: 6px;
 	outline: none;
@@ -553,10 +557,10 @@ section{
 	font-family: 'Roboto', sans-serif;
 }
 .contato .right form .name{
-	margin-right: 10px; width: 50%;
+	margin-right: 10px; width: 100%;
 }
 .contato .right form .email{
-	margin-left: 10px; width: 50%;
+	margin-left: 0; width: 100%;
 }
 .contato .right form .textarea{
 	width: 100%;
@@ -573,6 +577,7 @@ section{
 .contato .right form .button button{
 	width: 100%;  
 	height: 100%;
+	margin-top: 25px;
 	border: 2px solid #00804b;
 	background: #00804b;
 	color: #fff;
